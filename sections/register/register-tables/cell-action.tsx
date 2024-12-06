@@ -56,7 +56,7 @@ export const CellAction: React.FC<CellActionProps> = ({
 
   const deleteRegister = async (userData: { id: string; date: any }) => {
     try {
-      const response = await fetch('/api/registerdelete', {
+      const response = await fetch('/api/admin/registerdelete', {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json'
